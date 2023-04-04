@@ -1,5 +1,6 @@
 import React from 'react'
 import BtnPair from './BtnPair'
+import MultiBtns from './MultiBtns'
 
 const Buttons = () => {
   return (
@@ -45,6 +46,63 @@ const Buttons = () => {
         option: 'disableShadow',
         endIcon: 'add_shopping_cart'
       }}
+      />
+
+      {/* Here Begins the multiButtons */}
+
+      <MultiBtns
+      titles={[
+        'size="sm"',
+        'size="md"',
+        'size="lg"'
+      ]}
+      btnsProps={[
+        {
+          option: 'disableShadow',
+          size: 'sm'
+        },
+        {
+          option: 'disableShadow',
+          size: 'md'
+        },
+        {
+          option: 'disableShadow',
+          size: 'lg'
+        }
+      ]}
+
+      />
+
+      <MultiBtns
+      titles={[
+        'color="default"',
+        'color="primary"',
+        'color="secondary"',
+        'color="danger"'
+      ]}
+      btnsProps={[
+        {
+          option: 'original',
+          textContent: 'Default',
+          color: 'default'
+        },
+        {
+          option: 'original',
+          textContent: 'Primary',
+          color: 'primary'
+        },
+        {
+          option: 'original',
+          textContent: 'Secondary',
+          color: 'secondary'
+        },
+        {
+          option: 'original',
+          textContent: 'Danger',
+          color: 'danger'
+        }
+      ]}
+      hover
       />
     </>
   )

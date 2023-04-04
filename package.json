@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "dependencies": {
     "eslint-config-next": "13.2.4",
@@ -16,13 +17,14 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
-    "tailwindcss": "^3.3.1",
-    "postcss": "^8.4.21",
     "eslint": "^8.37.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.32.2"
+    "eslint-plugin-react": "^7.32.2",
+    "gh-pages": "^5.0.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
   }
 }

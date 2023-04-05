@@ -3,7 +3,7 @@ import React from 'react'
 
 const MultiBtns = ({ hover = false, titles = [], btnsProps = [] }) => {
   return (
-    <section className=" flex flex-col">
+    <section className=" flex flex-col dark:text-white">
       <div className="font-medium flex pb-10 gap-20">
         {btnsProps.map((btnProp, index) => (
           <div

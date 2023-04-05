@@ -12,7 +12,7 @@ const BtnPair = ({
   const optFirst = OptToSecond ? { ...BtnProp, option: undefined, optionValue: undefined } : BtnProp
   // Recibimos el prop y se lo pasamos
   return (
-    <div className='font-medium flex pb-10 gap-20'>
+    <div className='font-medium flex pb-10 gap-20 dark:text-white'>
       <div className='btn flex flex-col items-start w-60  min-w-max'>
         <span className='pb-4'>&lt;Button {title} /&gt;</span>
         <Button {...optFirst}/>
